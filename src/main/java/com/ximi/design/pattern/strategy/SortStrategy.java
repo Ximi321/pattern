@@ -9,6 +9,7 @@ public interface SortStrategy {
 
     /**
      * 排序,需要排序的数据
+     *
      * @param data
      */
     public <E extends Comparable> void sort(List<E> data);

@@ -21,7 +21,7 @@ public class SortFactory {
 
     public static SortStrategy getSortStrategy(Integer size){
         for(Map.Entry<Range,SortStrategy> entry:sortStrategyMap.entrySet()){
-            if(entry.getKey().getMin() >= size && entry.getKey().getMax() <= size){
+            if(entry.getKey().getMin() <= size && entry.getKey().getMax() >= size){
                 return entry.getValue();
             }
         }
