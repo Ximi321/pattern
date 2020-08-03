@@ -71,6 +71,7 @@ public class ObserverRegister {
                 actions.add(action);
             }
         }
+        registerMap.put(classType,actions);
         return actions;
     }
 
