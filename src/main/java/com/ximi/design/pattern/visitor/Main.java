@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 访问这模式主要使用方法重载的特性,在java中,方法执行的入口在编译器就已经确定了。
+ * 访问这模式主要使用方法重载的特性,在java中,方法执行的入口在编译期就已经确定了。
  * 下面的情况就会出现编译不通过
  *
  * class A{
