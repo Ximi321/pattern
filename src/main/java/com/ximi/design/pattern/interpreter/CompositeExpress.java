@@ -86,6 +86,11 @@ public class CompositeExpress implements ExpressInterpreter {
 
             childExpress.append(express.charAt(index));
             if (index == express.length() - 1) {
+
+                if(leftBracket != 0){
+                    throw new ExpressException("表示式错误");
+                }
+
                 interpreters.add(new NumberExpress(childExpress.toString()));
             }
         }
