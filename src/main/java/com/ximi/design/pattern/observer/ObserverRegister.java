@@ -20,7 +20,7 @@ public class ObserverRegister {
     public void register(Object register) {
         List<ObserverAction> list = findAllObserverActions(register);
         allActions.addAll(list);
-        updateRegister(allActions);
+        updateRegister(list);
     }
 
     /**
